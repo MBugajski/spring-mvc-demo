@@ -6,7 +6,7 @@
 
 <body>
 
-	<form action="processForm" method="GET">
+	<form action="processFormVersionTwo" method="GET">
 		
 		<input type = "text" name="studentName"
 			placeholder="What's your name?"/>
@@ -15,7 +15,7 @@
 
 <hr>
 
-<a href="main-manu">Back</a>
+	<a href="/spring-mvc-demo">Back</a>
 
 </body>
 

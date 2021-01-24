@@ -8,11 +8,16 @@ Hello World of Spring!
 
 <br><br>
 
-Student name: ${param.studentName})
+Student name: ${param.studentName}
 
 <hr>
 
-<a href="main-manu">Return to Home Page</a>
+	<a href="/spring-mvc-demo">Return to Home Page</a>
+
+<br><br>
+
+The message: ${message}
+
 
 </body>
 </html>
