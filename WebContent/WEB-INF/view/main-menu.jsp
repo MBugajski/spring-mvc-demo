@@ -20,11 +20,15 @@
 
 <br><br>
 
-<img src="${pageContext.request.contextPath}/resources/images/spring-logo.png" />
+	<a href="student/showForm">Student registration form</a>
 
 <br><br>
 
-<input type="button" onclick="doSomeWork()" value="Click Me"/>
+	<img src="${pageContext.request.contextPath}/resources/images/spring-logo.png" />
+
+<br><br>
+
+	<input type="button" onclick="doSomeWork()" value="Click Me"/>
 
 </body>
 
