@@ -20,10 +20,24 @@
 		Last name: <form:input path="lastName" />
 		
 		<br><br>
+	
+		<form:select path="">
+		
+			<form:option value="France" label="France"/>
+			<form:option value="Brazil" label="Brazil"/>
+			<form:option value="Germany" label="Germany"/>
+			<form:option value="Poland" label="Poland"/>
+			<form:option value="Spain" label="Spain"/>
+			
+		</form:select>
+		
+		<br><br>
 		
 		<input type="submit" value="Submit" />
 		
 	</form:form>
+	
+
 
 <hr>
 
