@@ -21,13 +21,21 @@
 		
 		<br><br>
 	
-		<form:select path="">
+		<form:select path="country">
 		
 			<form:option value="France" label="France"/>
 			<form:option value="Brazil" label="Brazil"/>
 			<form:option value="Germany" label="Germany"/>
 			<form:option value="Poland" label="Poland"/>
 			<form:option value="Spain" label="Spain"/>
+			
+		</form:select>
+		
+		<br><br>
+		
+		<form:select path="country">
+		
+			<form:options items="${student.countryOptions}"/>
 			
 		</form:select>
 		
