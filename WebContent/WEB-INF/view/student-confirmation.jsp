@@ -11,7 +11,15 @@
 
 <body>
 
-	The student is confirmed: ${student.firstName} ${student.lastName} from ${student.country}
+	The student is confirmed: ${student.firstName} ${student.lastName} 
+	
+	<br><br>
+	
+	Country: ${student.country}
+	
+	<br><br>
+	
+	Favorite language: ${student.favoriteLanguage}
 
 <hr>
 
