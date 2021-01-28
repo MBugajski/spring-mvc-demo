@@ -1,4 +1,6 @@
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
 
 <!DOCTYPE html>
 <html>
@@ -57,6 +59,14 @@
 		C# <form:radiobutton path="favoriteLanguage" value="C#" />
 		
 		
+		<br><br>
+
+		Operating systems:
+		
+		Linux <form:checkbox path="operatingSystems" value="Linux" />
+		Windows <form:checkbox path="operatingSystems" value="Windows" />
+		Mac OS <form:checkbox path="operatingSystems" value="Mac OS" />
+
 		<br><br>
 		
 		<input type="submit" value="Submit" />
