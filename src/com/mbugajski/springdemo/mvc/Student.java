@@ -15,9 +15,10 @@ public class Student {
 	@NotNull(message="is required")
 	@Size(min=1, message="is required")
 	private String lastName;
+	@NotNull(message="is required")
 	@Min(value=1, message="must be between 1 and 5")
 	@Max(value=5, message="must be between 1 and 5")
-	private int year;
+	private Integer year;
 	@Pattern(regexp="^[0-9]{2}(-)[0-9]{3}$", message="must match \"dd-ddd\" pattern (d=digit) e.g. 00-001")
 	private String postalCode;
 	private String country;
@@ -55,12 +56,12 @@ public class Student {
 	}
 
 
-	public int getYear() {
+	public Integer getYear() {
 		return year;
 	}
 
 
-	public void setYear(int year) {
+	public void setYear(Integer year) {
 		this.year = year;
 	}
 
