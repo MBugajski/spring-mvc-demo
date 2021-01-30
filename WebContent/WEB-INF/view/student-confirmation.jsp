@@ -21,6 +21,10 @@
 
 	<br><br>
 	
+	Postal code: ${student.postalCode}
+	
+	<br><br>
+	
 	Country: ${student.country}
 	
 	<br><br>

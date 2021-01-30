@@ -5,6 +5,7 @@ import java.util.LinkedHashMap;
 import javax.validation.constraints.Max;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Size;
 
 public class Student {
@@ -17,6 +18,8 @@ public class Student {
 	@Min(value=1, message="must be between 1 and 5")
 	@Max(value=5, message="must be between 1 and 5")
 	private int year;
+	@Pattern(regexp="^[0-9]{2}(-)[0-9]{3}$", message="must match \"dd-ddd\" pattern (d=digit) e.g. 00-001")
+	private String postalCode;
 	private String country;
 	private LinkedHashMap<String, String> countryOptions;
 	private String favoriteLanguage;
@@ -59,6 +62,16 @@ public class Student {
 
 	public void setYear(int year) {
 		this.year = year;
+	}
+
+	
+	public String getPostalCode() {
+		return postalCode;
+	}
+
+
+	public void setPostalCode(String postalCode) {
+		this.postalCode = postalCode;
 	}
 
 

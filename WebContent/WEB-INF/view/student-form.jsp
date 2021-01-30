@@ -29,6 +29,11 @@
 		<form:errors path="year" cssClass="error" />
 		
 		<br><br>
+
+		Postal code (*):<form:input path="postalCode" />
+		<form:errors path="postalCode" cssClass="error" />
+		
+		<br><br>
 	
 		<form:select path="country">
 		
