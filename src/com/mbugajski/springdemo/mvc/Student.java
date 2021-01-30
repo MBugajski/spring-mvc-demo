@@ -2,6 +2,8 @@ package com.mbugajski.springdemo.mvc;
 
 import java.util.LinkedHashMap;
 
+import javax.validation.constraints.Max;
+import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
@@ -12,6 +14,9 @@ public class Student {
 	@NotNull(message="is required")
 	@Size(min=1, message="is required")
 	private String lastName;
+	@Min(value=1, message="must be between 1 and 5")
+	@Max(value=5, message="must be between 1 and 5")
+	private int year;
 	private String country;
 	private LinkedHashMap<String, String> countryOptions;
 	private String favoriteLanguage;
@@ -44,6 +49,16 @@ public class Student {
 
 	public void setLastName(String lastName) {
 		this.lastName = lastName;
+	}
+
+
+	public int getYear() {
+		return year;
+	}
+
+
+	public void setYear(int year) {
+		this.year = year;
 	}
 
 

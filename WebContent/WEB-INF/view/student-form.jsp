@@ -24,6 +24,11 @@
 		<form:errors path="lastName" cssClass="error" />
 		
 		<br><br>
+
+		Year of study (*): <form:input path="year" />
+		<form:errors path="year" cssClass="error" />
+		
+		<br><br>
 	
 		<form:select path="country">
 		

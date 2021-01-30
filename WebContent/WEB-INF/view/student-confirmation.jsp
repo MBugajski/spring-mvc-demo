@@ -16,6 +16,10 @@
 	The student is confirmed: ${student.firstName} ${student.lastName} 
 	
 	<br><br>
+
+	Year of study: ${student.year}
+
+	<br><br>
 	
 	Country: ${student.country}
 	
