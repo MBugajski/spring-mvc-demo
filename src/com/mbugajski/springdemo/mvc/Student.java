@@ -8,6 +8,8 @@ import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Size;
 
+import com.mbugajski.springdemo.mvc.validation.StudentId;
+
 public class Student {
 	@NotNull(message="is required")
 	@Size(min=1, message="is required")
@@ -19,6 +21,8 @@ public class Student {
 	@Min(value=1, message="must be between 1 and 5")
 	@Max(value=5, message="must be between 1 and 5")
 	private Integer year;
+	@StudentId
+	private String studentId;
 	@Pattern(regexp="^[0-9]{2}(-)[0-9]{3}$", message="must match \"dd-ddd\" pattern (d=digit) e.g. 00-001")
 	private String postalCode;
 	private String country;
@@ -66,6 +70,16 @@ public class Student {
 	}
 
 	
+	public String getStudentId() {
+		return studentId;
+	}
+
+
+	public void setStudentId(String studentId) {
+		this.studentId = studentId;
+	}
+
+
 	public String getPostalCode() {
 		return postalCode;
 	}

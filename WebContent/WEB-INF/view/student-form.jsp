@@ -30,6 +30,11 @@
 		
 		<br><br>
 
+		Student ID:<form:input path="studentId" />
+		<form:errors path="studentId" cssClass="error" />
+		
+		<br><br>
+		
 		Postal code (*):<form:input path="postalCode" />
 		<form:errors path="postalCode" cssClass="error" />
 		

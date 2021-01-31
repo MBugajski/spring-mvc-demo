@@ -21,6 +21,10 @@
 
 	<br><br>
 	
+	Student ID: ${student.studentId}
+	
+	<br><br>
+
 	Postal code: ${student.postalCode}
 	
 	<br><br>
