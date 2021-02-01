@@ -13,9 +13,9 @@ import javax.validation.Payload;
 @Retention(RetentionPolicy.RUNTIME)
 public @interface StudentId {
 
-	public String value() default "UW";
+	public String[] value() default {"UW", "WUM"};
 
-	public String message() default "must start with UW";
+	public String message() default "must start with UW or WUM";
 
 	public Class<?>[] groups() default {};
 
